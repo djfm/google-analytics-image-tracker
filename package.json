@@ -1,11 +1,17 @@
 {
   "name": "google-analytics-image-tracker",
   "scripts": {
+    "startDev": "ts-node src/server/index.ts",
     "build": "echo 'no build script yet' && exit 1",
     "start": "echo 'node dunno/where/build/will/be/yet.js' && exit 2"
   },
   "engines": {
     "node": "16.1.x",
     "yarn": "1.22.x"
+  },
+  "dependencies": {
+    "@types/node": "^15.0.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
   }
 }
