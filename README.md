@@ -16,3 +16,11 @@ heroku config:set MY_CUSTOM_VALUE=foobar
 ```
 
 Also, [RTFM](https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version);
+
+## Ff eslint doesn't seem to work
+
+Run it manually to have more info, in our case:
+
+```
+yarn eslint src
+```

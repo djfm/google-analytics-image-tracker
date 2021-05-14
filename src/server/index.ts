@@ -1,7 +1,7 @@
 import path from 'path';
 import express from 'express';
 
-const app = express();
+const app = express()
 
 app.use(express.static(
   path.resolve(
