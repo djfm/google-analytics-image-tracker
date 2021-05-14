@@ -1,5 +1,9 @@
 {
   "name": "google-analytics-image-tracker",
+  "scripts": {
+    "build": "echo 'no build script yet' && exit 1",
+    "start": "echo 'node dunno/where/build/will/be/yet.js' && exit 2"
+  },
   "engines": {
     "node": "16.1.x",
     "yarn": "1.22.x"
