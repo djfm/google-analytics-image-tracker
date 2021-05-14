@@ -11,19 +11,35 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".ts"
+        ]
+      }
     }
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "import"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
   ],
   "rules": {
-
-  }
+    "import/extensions": [
+      "warn",
+      {
+        "ts": "never"
+      }
+    ]
+  },
+  "ignorePatterns": ["build/*.js"]
 }
