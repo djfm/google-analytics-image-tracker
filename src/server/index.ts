@@ -3,6 +3,9 @@ import express from 'express';
 
 import rootPath from '../../rootPath';
 
+// TODO for production, find a good node reloader
+// that restarts the app in case it crashes
+
 const app = express();
 
 const publicPath = path.join(
