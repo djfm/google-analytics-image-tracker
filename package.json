@@ -1,3 +1,7 @@
 {
-  "name": "google-analytics-image-tracker"
+  "name": "google-analytics-image-tracker",
+  "engines": {
+    "node": "16.1.x",
+    "yarn": "1.22.x"
+  }
 }
