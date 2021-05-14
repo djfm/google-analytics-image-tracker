@@ -4,7 +4,7 @@
     "lint": "eslint src",
     "startDev": "ts-node src/server/index.ts",
     "build": "webpack",
-    "start": "echo 'node dunno/where/build/will/be/yet.js' && exit 2"
+    "start": "node build/server.js"
   },
   "engines": {
     "node": "16.1.x"
