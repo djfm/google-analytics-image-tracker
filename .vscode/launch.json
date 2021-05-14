@@ -17,7 +17,24 @@
         "--require", "ts-node/register",
         "--nolazy"
       ],
-      // "smartStep": true
+      "smartStep": true
+    },
+    {
+      "name": "Launch TS server with auto-reload",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "ts-node-dev",
+      "runtimeArgs": [
+      ],
+      "program": "${workspaceFolder}/src/server/index.ts",
+      "skipFiles": [
+        "<node_internals>/**",
+        "**/node_modules/**"
+      ],
+      "env": {
+        "PATH": "${workspaceFolder}/node_modules/.bin:${env:PATH}"
+      },
+      "smartStep": true
     },
     {
       "type": "node",

@@ -2,7 +2,7 @@
   "name": "google-analytics-image-tracker",
   "scripts": {
     "lint": "eslint src",
-    "startDev": "ts-node src/server/index.ts",
+    "startDev": "ts-node-dev --watch src/server/index.ts",
     "build": "webpack",
     "start": "node build/server.js"
   },
@@ -29,6 +29,7 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "ts-loader": "^9.1.2",
+    "ts-node-dev": "^1.1.6",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0",
     "webpack-node-externals": "^3.0.0"
