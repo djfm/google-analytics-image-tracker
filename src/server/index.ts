@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 
   if (req.method === 'GET') {
     res.set({
-      'Cache-Control': 'no-cache',
+      'Cache-Control': 'no-cache, must-revalidate, proxy-revalidate',
       'Access-Control-Max-Age': '1',
       'Content-Type': 'image/png',
       ETag,
