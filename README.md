@@ -76,3 +76,13 @@ it fail. Pruning devDependencies after the build is apparently still possible so
 but I really don't care about that.
 
 Ok now I'm gonna commit and push to trigger a build and hope it builds!
+
+**Update**:
+
+**It works on heroku now!!**
+
+At this point, the project can be used as a good starting point for
+TypeScript node projects that work well locally and deploy easily to
+heroku. Just checkout the code at commit [bda2cab808fef123b60fb6ff24f2b41c9cfbd893](https://github.com/djfm/google-analytics-image-tracker/tree/bda2cab808fef123b60fb6ff24f2b41c9cfbd893),
+there is nothing functionally-specific yet. And I promise I wont `git push -f` so
+this commit should stay forever good.
