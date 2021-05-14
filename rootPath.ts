@@ -31,4 +31,8 @@ if (entryBasename === 'server') {
   rootPathComponents.pop();
 }
 
+// yes, the path will start with two slashes under Linux,
+// but under Unix systems multiple consecutive directory
+// separators are treated as just one, so that is not an
+// issue
 export default join(...rootPathComponents);
