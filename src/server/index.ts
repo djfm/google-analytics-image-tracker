@@ -34,7 +34,9 @@ const getId = (req: Request): string => {
 };
 
 app.get('*', (req, res) => {
-  const measurementId = req.params.measurementId ?? unknownMeasurementId;
+  // TODO envoyer une requête PURGE (curl -X PURGE url) pour vider le cache Camo de GitHub
+
+  const measurementId = req.query.measurementId ?? unknownMeasurementId;
 
   const sha = crypto.createHash('sha1');
   sha.update(`${measurementId}-${getId(req)}`);
@@ -44,7 +46,8 @@ app.get('*', (req, res) => {
   // eslint-disable-next-line no-console
   console.log('#### Request', req.url, '\n', req.query, '\n', req.headers, '\n', { measurementId });
   res.set({
-    'Cache-Control': 'max-age=1',
+    'Cache-Control': 'no-cache',
+    'Access-Control-Max-Age': '1',
     'Content-Type': 'image/png',
     ETag,
   });
